@@ -1,8 +1,8 @@
 <?php
 ini_set('max_execution_time', 300);
 
-$fb_app_id = '240715193433843';
-$fb_secret_id = 'cacf127ca28f009f996ee5a0888b095c';
+$fb_app_id = 'XXXXXXXXXXXXXXX';
+$fb_secret_id = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
 $fb_login_url = 'http://rtcamp-fb-assignment.000webhostapp.com/facebookProfile.php';
 
 require_once ('lib/Facebook/autoload.php');
