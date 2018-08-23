@@ -1,6 +1,6 @@
 # rtCamp-Facebook-Assignment
 
-My submission for rtCamp's Facebook-Photos Challenge Assignment[[Challenge Link](https://careers.rtcamp.com/web-engineer/assignments/#facebook-challenge)]
+My submission for rtCamp's Facebook-Photos Challenge Assignment [[Challenge Link](https://careers.rtcamp.com/web-engineer/assignments/#facebook-challenge)]
 
 # Demo
 
@@ -16,13 +16,15 @@ Site Link : [rtcamp-fb-assignment.000webhostapp.com](https://rtcamp-fb-assignmen
 * [Bootstrap](https://w3layouts.com/)
 * [Spinner](http://spin.js.org)
 
-## Features
+# Features
 
 * **Responsive** - Site can response on all the devices.
 * **Organized Code** -  All 3rd party libraries are inside the lib folder. And unwanted files and temporary files are gitignored.
 * **Coding Standards** - The code is highly optimized and follows maximum coding Standards.
 * **Unit Test** - The code is also unit tested.
 
+
+# Thank you...
 
 
 
