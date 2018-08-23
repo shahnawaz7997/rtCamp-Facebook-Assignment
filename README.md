@@ -6,7 +6,7 @@ My submission for rtCamp's Facebook-Photos Challenge Assignment[[Challenge Link]
 
 [rtcamp-fb-assignment.000webhostapp.com](https://rtcamp-fb-assignment.000webhostapp.com/)
 
-![My Profle Demo](https://rtcamp-fb-assignment.000webhostapp.com/images/myProfile.gif)
+![My Profle Demo](https://rtcamp-fb-assignment.000webhostapp.com/images/myProfile.gif =250x250)
 
 # Libraries Used
 
