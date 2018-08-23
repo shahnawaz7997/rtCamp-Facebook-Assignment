@@ -11,8 +11,8 @@ Site Link : [rtcamp-fb-assignment.000webhostapp.com](https://rtcamp-fb-assignmen
 # Libraries Used
 
 * [Facebook PHP Graph SDK](https://github.com/facebook/php-graph-sdk)
-* [Google APIs Client Library for PHP](https://github.com/google/google-api-php-client)
-* [PHPUnit](https://phpunit.de/getting-started/phpunit-5.html)
+* [Google APIs Client Library for PHP](https://github.com/google/google-api-php-client) [Not included in repo]
+* [PHPUnit](https://phpunit.de/getting-started/phpunit-5.html) [Not included in repo]
 * [Bootstrap](https://w3layouts.com/)
 * [Spinner](http://spin.js.org)
 
