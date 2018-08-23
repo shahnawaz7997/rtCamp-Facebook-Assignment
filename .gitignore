@@ -1,4 +1,4 @@
 composer.lock
-credentials.json
+*credentials.json
 vendor/*
 phpunit.xml
