@@ -4,7 +4,7 @@ My submission for rtCamp's Facebook-Photos Challenge Assignment[[Challenge Link]
 
 # Demo
 
-[Click here](https://rtcamp-fb-assignment.000webhostapp.com/)
+[rtcamp-fb-assignment.000webhostapp.com](https://rtcamp-fb-assignment.000webhostapp.com/)
 
 # Libraries Used
 
