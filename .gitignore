@@ -1,4 +1,5 @@
-composer.lock
-*credentials.json
-vendor/*
-phpunit.xml
+credentials*
+
+#composer.lock
+#vendor/*
+#phpunit.xml
