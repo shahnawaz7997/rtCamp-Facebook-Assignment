@@ -1,0 +1,4 @@
+composer.lock
+credentials.json
+vendor
+phpunit.xml
