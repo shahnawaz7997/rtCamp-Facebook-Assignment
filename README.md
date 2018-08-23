@@ -6,7 +6,7 @@ My submission for rtCamp's Facebook-Photos Challenge Assignment [[Challenge Link
 
 ![My Profle Demo](https://github.com/shahnawaz7997/rtCamp-Facebook-Assignment/blob/master/images/myProfile.gif)
 
-Site Link : [rtcamp-fb-assignment.000webhostapp.com](https://rtcamp-fb-assignment.000webhostapp.com/)
+Site Link : [rtcamp-fb-assignment.000webhostapp.com](https://rtcamp-fb-assignment.000webhostapp.com/) [Facebook app in pending review]
 
 # Libraries Used
 
