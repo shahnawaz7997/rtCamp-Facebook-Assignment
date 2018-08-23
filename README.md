@@ -12,7 +12,16 @@ Site Link : [rtcamp-fb-assignment.000webhostapp.com](https://rtcamp-fb-assignmen
 
 * [Facebook PHP Graph SDK](https://github.com/facebook/php-graph-sdk)
 * [Google APIs Client Library for PHP](https://github.com/google/google-api-php-client)
+* [PHPUnit](https://phpunit.de/getting-started/phpunit-5.html)
+* [Bootstrap](https://w3layouts.com/)
 * [Spinner](http://spin.js.org)
+
+## Features
+
+* **Responsive** - Site can response on all the devices.
+* **Organized Code** -  All 3rd party libraries are inside the lib folder. And unwanted files and temporary files are gitignored.
+* **Coding Standards** - The code is highly optimized and follows maximum coding Standards.
+* **Unit Test** - The code is also unit tested.
 
 
 
