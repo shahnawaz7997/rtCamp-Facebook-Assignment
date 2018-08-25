@@ -1,5 +1,5 @@
 <?php
-include'../lib/phpunit/vendor/autoload.php';
+include'../node_modules/lib/phpunit/vendor/autoload.php';
 include'../zipAlbum.php';
 use PHPUnit\Framework\TestCase;
 
