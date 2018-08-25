@@ -19,9 +19,10 @@ Site Link : [rtcamp-fb-assignment.000webhostapp.com](https://rtcamp-fb-assignmen
 # Features
 
 * **Responsive** - Site can response on all the devices.
-* **Organized Code** -  All 3rd party libraries are inside the lib folder. And unwanted files and temporary files are gitignored.
 * **Coding Standards** - The code is highly optimized and follows maximum coding Standards.
+* **Organized Code** -  All 3rd party libraries and codes are managed through "npm" and stored inside the "node_modules" folder. And it is also gitignored :wink:.
 * **Unit Test** - The code is also unit tested.
+
 
 
 # Thank you...
