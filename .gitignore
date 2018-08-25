@@ -1,5 +1,2 @@
-composer.lock
-credentials.json
-vendor/*
-phpunit.xml
+node_modules/
 
