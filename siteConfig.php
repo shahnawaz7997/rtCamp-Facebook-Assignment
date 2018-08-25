@@ -5,8 +5,8 @@ $fb_app_id = 'XXXXXXXXXXXXXXX';
 $fb_secret_id = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
 $fb_login_url = 'http://rtcamp-fb-assignment.000webhostapp.com/facebookProfile.php';
 
-require_once ('lib/Facebook/autoload.php');
-require_once ('lib/google/vendor/autoload.php');
+require_once ('node_modules/lib/Facebook/autoload.php');
+require_once ('node_modules/lib/google/vendor/autoload.php');
 
 /**
  *
