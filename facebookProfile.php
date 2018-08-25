@@ -15,12 +15,12 @@
 		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 		<!-- //for-mobile-apps -->
-		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="node_modules/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 		<link href="style.css" rel="stylesheet" type="text/css" media="all" />
 		<!-- font-awesome icons -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-		<link href="css/font-awesome.css" rel="stylesheet"> 
-		<script src="js/spin.min.js"></script>
+		<link href="node_modules/css/font-awesome.css" rel="stylesheet"> 
+		<script src="node_modules/js/spin.min.js"></script>
 
 		<!-- //font-awesome icons -->
 		<link href="//fonts.googleapis.com/css?family=Gidugu" rel="stylesheet">
@@ -236,12 +236,12 @@
     }catch ( Exception $ex ) {
 			echo $ex;
 }?>
-<script src="js/jquery-2.2.3.min.js"></script> 
+<script src="node_modules/js/jquery-2.2.3.min.js"></script> 
 <!-- js -->
-<script src="js/jquery.mobile.custom.min.js"></script>
+<script src="node_modules/js/jquery.mobile.custom.min.js"></script>
 <!-- start-smoth-scrolling -->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="node_modules/js/move-top.js"></script>
+<script type="text/javascript" src="node_modules/js/easing.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){		
@@ -252,7 +252,7 @@
 </script>
 <!-- start-smoth-scrolling -->
 <!-- //js -->
-<script src="js/bootstrap.js"></script>
+<script src="node_modules/js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
 <!-- here stars scrolling icon -->
 <script type="text/javascript">
