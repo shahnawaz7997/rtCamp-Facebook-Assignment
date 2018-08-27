@@ -22,7 +22,7 @@
 * **Coding Standards** - The code is highly optimized and follows maximum coding Standards.
 * **Organized Code** -  All 3rd party libraries and codes are managed through **"npm"** and stored inside the "node_modules" folder. And it is also gitignored :wink:.
 * **Unit Test** - The code is also unit tested.
-
+* **Implementation** - All the given three parts are successfully implemented and working well. Also followed maximum given rules and guidelines.
 
 
 # Thank you...
