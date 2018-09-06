@@ -66,7 +66,13 @@
 			<!--Slider-->
 			<img src="https://graph.facebook.com/<?php echo $user['id']; ?>/picture" alt=" " class="img-responsive">
 			<h2>Welcome, <?php echo $user['name']; ?></h2>
-			<span>Email : <?php echo $user['email']; ?></span>	
+			<span>Email : <?php
+				if(isset($user['email']))
+				 	echo $user['email'];
+				 else
+				 	echo "NOT SPECIFIED";
+				?>
+			</span>	
 		</div>
 	<!-- //banner -->
 	</div>
@@ -83,11 +89,23 @@
 					</div>
 					<div class="w3ls-agile-left-info">	
 						<h4>Sex</h4>
-						<p><?php echo $user['gender']; ?></p>
+						<p><?php
+				                if(isset($user['gender']))
+				 	                echo $user['gender'];
+				                else
+				 	                echo "NOT SPECIFIED";
+				            	?>
+						</p>
 					</div>
 					<div class="w3ls-agile-left-info">
 						<h4>Email Address</h4>
-						<p><?php echo $user['email']; ?></p>
+						<p><?php
+				                if(isset($user['email']))
+				 	                echo $user['email'];
+				                else
+				 	                echo "NOT SPECIFIED";
+				            	?>
+						</p>
 					</div>
 				</div>
 				<div class="clearfix"> </div>
@@ -174,9 +192,7 @@
 			<div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="album">
                     <a class="dynamic" data-id="<?php echo $album['id']; ?>">                       
-                        <a href="albumSlider.php?ida=<?php echo $album['id']; ?>">
                         	<div class="album_img" style="background-image: url(<?php  echo $alb['source'];?>)"></div>
-                        </a>
                     </a>
                     <a class="dynamic"><h3><?php echo $album['name']; ?></h3></a>
                     <div class="content">
@@ -396,6 +412,26 @@ $('.move_album').click(function () {
             $("#download-modal").modal({
 				show:true
 			});
+		}
+    });
+});
+
+$('.dynamic').click(function () {
+            var album_id = $(this).data('id');
+			
+            $.ajax({
+                type: 'POST',
+                url: 'albumSlider.php',    
+           	    data: {
+                    album_id: album_id,
+                    photos: ''
+                },
+                success: function (res) {
+                    var srcObj = JSON.parse(res);
+                    $(this).lightGallery({
+                        dynamic: true,
+                        dynamicEl: srcObj
+			})
 		}
     });
 });
