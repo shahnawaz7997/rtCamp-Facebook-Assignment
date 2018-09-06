@@ -15,6 +15,7 @@
 * [PHPUnit](https://phpunit.de/getting-started/phpunit-5.html) [Not included in repo]
 * [Bootstrap](https://w3layouts.com/)
 * [Spinner](http://spin.js.org)
+* [LightGallery](https://github.com/sachinchoolur/lightGallery)
 
 # Highlights
 
