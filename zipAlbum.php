@@ -29,7 +29,7 @@ class Zipper {
 					$a[] = array(
 						'type' => 'dir',
 						'source' => str_replace($source . '/', '', $file . '/'),
-						'file' => $file,
+						'file' => substr($file,61),
 						'size' => 0
 					);
 				} else if (is_file($file) === true) {
