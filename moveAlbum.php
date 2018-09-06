@@ -19,7 +19,7 @@ function url_get_contents ($Url) {
 
 function moveToDrive($album_id,$folderId,$drive){
 
-    $photos = datafromfacebook ( '/' . $album_id . '/photos?fields=source' );
+    $photos = datafromfacebook ( '/' . $album_id . '/photos?fields=source&limit=100' );
     $album = datafromfacebook ( '/' . $album_id .'?fields=id,name');
     $fileMetadata = new Google_Service_Drive_DriveFile(array(
         'name' => $album['name'],
@@ -30,7 +30,10 @@ function moveToDrive($album_id,$folderId,$drive){
     $file = $drive->files->create($fileMetadata, array('fields' => 'id'));
     $album_folder = $file->id;
 
-    foreach ($photos['data'] as $photo) {
+    $offset=0;
+    while(count($photos['data']) > 0)
+    {
+        foreach ($photos['data'] as $photo) {
             $photo = ( array ) $photo;
             $fileMetadata = new Google_Service_Drive_DriveFile(array(
                 'name' => uniqid().'.jpg',
@@ -43,6 +46,9 @@ function moveToDrive($album_id,$folderId,$drive){
                 'uploadType' => 'multipart',
                 'fields' => 'id'
             ));
+         }
+         $offset+=100;
+         $photos = datafromfacebook ( '/' . $album_id . '/photos?fields=source&limit=100&offset='.$offset );
     }
 }
 
