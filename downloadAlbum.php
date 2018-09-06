@@ -21,17 +21,22 @@ mkdir ( $album_download_directory, 0777 );
 
 // ---------- Download Configuration -------------------------------------------------//
 function download_album($album_download_directory, $album_id, $album_name) {
-	$album_photos = datafromfacebook ( '/' . $album_id . '/photos?fields=source' );
+	$album_photos = datafromfacebook ( '/' . $album_id . '/photos?fields=source&limit=100' );
 	$album_directory = $album_download_directory . $album_name;
 	if (! file_exists ( $album_directory )) {
 		mkdir ( $album_directory, 0777 );
 	}
 	$i = 1;
-	
-	foreach ( $album_photos ['data'] as $album_photo ) {
-		$album_photo = ( array ) $album_photo;
-		file_put_contents ( $album_directory . '/' . $i . ".jpg", fopen ( $album_photo ['source'], 'r' ) );
-		$i ++;
+	$offset=0;
+	while(count($album_photos ['data']) > 0)
+	{
+		foreach ( $album_photos ['data'] as $album_photo ) {
+			$album_photo = ( array ) $album_photo;
+			file_put_contents ( $album_directory . '/' . $i . ".jpg", fopen ( $album_photo ['source'], 'r' ) );
+			$i ++;
+		}
+		$offset+=100;
+		$album_photos = datafromfacebook ( '/' . $album_id . '/photos?fields=source&limit=100&offset='.$offset);
 	}
 }
 
